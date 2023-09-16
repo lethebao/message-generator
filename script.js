@@ -22,7 +22,7 @@ let personalWisdom = [];
 for (let prop in collectiveWisdom) {
   let optionIdx = generateRandomNumber(collectiveWisdom[prop].length);
 
-  // use the object's properties to customize the message being added to personalWisdom
+  
   switch (prop) {
     case "signInfo":
       personalWisdom.push( 
@@ -45,8 +45,6 @@ for (let prop in collectiveWisdom) {
 }
 
 function formatWisdom(wisdom) {
-  // Add some ASCII here?
-  // Add in more symbols to the array? like emojies or what not?
   const formatted = personalWisdom.join("\n");
   console.log(formatted);
 }
